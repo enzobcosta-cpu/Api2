@@ -23,10 +23,7 @@ async function buscarClima() {
     try {
 
         /* =================================================
-           BLOCO 2 - BUSCA O PRATO NA API
-
-           A API recebe o nome do prato através do parâmetro
-           "s" e retorna as informações da comida.
+              BLOCO 2 - BUSCA NA API
            ================================================= */
 
         const respostaPrato = await fetch(
@@ -66,11 +63,7 @@ async function buscarClima() {
         mensagem.innerHTML = `
             <strong>${nomePrato}</strong>
 
-            <br><br>
-
-            <img
-                src="${imagem}"
-                alt="Imagem de ${nomePrato}"
+         
             >
 
             <br><br>
