@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <!-- =====================================================
+         BLOCO 1 - CONFIGURAÇÕES DA PÁGINA
+         ===================================================== -->
+
+    <!-- Define a codificação dos caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar ao celular -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nome da página -->
+    <title>Consulta de Pratos</title>
+
+
+    <!-- =====================================================
+         BLOCO 2 - ARQUIVOS DO PROJETO
+         ===================================================== -->
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Manifesto do aplicativo -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Cor do aplicativo -->
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Ícone do aplicativo -->
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         BLOCO 3 - CAIXA PRINCIPAL
+         ===================================================== -->
+
+    <div class="clima">
+
+        <!-- Título principal -->
+        <h1>Consulta de Pratos</h1>
+
+
+        <!-- =================================================
+             BLOCO 4 - ÁREA DE PESQUISA
+             ================================================= -->
+
+        <div class="pesquisa">
+
+            <!-- Campo para digitar o nome do prato -->
+            <input
+                type="text"
+                id="cidade"
+                placeholder="Digite um prato"
+            >
+
+            <!-- Botão para pesquisar -->
+            <button
+                id="buscar"
+                onclick="buscarClima()"
+            >
+                Buscar
+            </button>
+
+        </div>
+
+
+        <!-- =================================================
+             BLOCO 5 - RESULTADO
+             ================================================= -->
+
+        <p id="mensagem">
+            Digite um prato para consultar.
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         BLOCO 6 - JAVASCRIPT
+         ===================================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
